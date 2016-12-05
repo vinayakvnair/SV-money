@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+android:background="@color/backgg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tkmdashboard.admins.currenc.signupActivity">
+
+
+
+        <LinearLayout
+            android:id="@+id/edittextlayouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp">
+
+            <EditText
+
+                android:layout_width="312dp"
+                android:layout_height="40dp"
+                android:id="@+id/usernameid"
+
+                android:hint="Username"
+                android:ems="10"
+                android:textColorHint="@color/gre"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="20dp"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:textColor="#494444" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/passwordid"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:ems="10"
+                android:textColorHint="@color/gre"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="20dp"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:textColor="#494444" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/passwordcnfid"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:ems="10"
+                android:textColorHint="@color/gre"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="20dp"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:textColor="#494444" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/emailid"
+                android:inputType="textEmailAddress"
+                android:hint="email id"
+                android:ems="10"
+                android:textColorHint="@color/gre"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="20dp"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:textColor="#494444" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/contactid"
+                android:inputType="number"
+                android:hint="Contact No"
+                android:ems="10"
+                android:textColorHint="@color/gre"
+                android:drawableLeft="@drawable/call"
+                android:drawablePadding="20dp"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:textColor="#494444" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/dobid"
+                android:inputType="text"
+                android:focusable="false"
+                android:hint="Date-of-Birth"
+                android:ems="10"
+                android:textColorHint="@color/gre"
+                android:drawableLeft="@drawable/dob"
+                android:drawablePadding="20dp"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/apptheme_edit_text_holo_light"
+                android:textColor="#494444" />
+
+
+                <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:id="@+id/radioGroup"
+                android:layout_centerVertical="true"
+                android:weightSum="1">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:id="@+id/maleid"
+                        android:checked="false"
+                        android:hint="Male"
+                        android:textSize="12sp"
+
+                        android:textColor="@color/currenc"
+
+                        android:layout_marginStart="10dp"
+
+                        android:layout_gravity="left" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/femaleid"
+                    android:checked="false"
+                    android:hint="Female"
+                    android:textSize="12sp"
+
+
+                    android:textColor="@color/currenc"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transgender"
+                        android:id="@+id/transid"
+                        android:checked="false"
+                        android:hint="Transgender"
+                        android:textSize="12sp"
+
+                        android:textColor="@color/currenc"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_gravity="right" />
+            </RadioGroup>
+
+
+            />
+
+
+
+
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:text="REGISTER"
+            android:id="@+id/registerid"
+            android:onClick="saveInfo"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_custom"
+            android:textSize="15sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+
+
+    </RelativeLayout>
+
+
+

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Curren₡</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="username_hint">e-mail</string>
+    <string name="password">Password</string>
+    <string name="loginbutton">LOG IN</string>
+
+    <string name="signuplabel">Register Now!</string>
+    <string name="apptitles">Curren</string>
+    <string name="app_id">343272199384535</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="signuperror">You Just Missed Something</string>
+    <string name="serrortext">Try Again!</string>
+    <string name="facebook_app_id">aqui su id app</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="cancel_login">Login Cancelled</string>
+    <string name="error_login">Error Logging In</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_initial">InitialActivity</string>
+    <string name="loginuperror">You Just Missed Something</string>
+    <string name="lerrortext">Try Again!</string>
+    <string name="default_intro">Start default Intro</string>
+    <string name="title_activity_default_intro">DefaultIntro</string>
+    <string name="skip">Welcome to TKM DashBoard</string>
+    <string name="title_activity_daily">dailyActivity</string>
+
+
+</resources>

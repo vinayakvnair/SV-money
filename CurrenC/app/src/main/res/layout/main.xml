@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@android:color/white"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_top">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#2ea3fe"/>
+
+        <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/titlebar_menu_selector"
+                    android:id="@+id/title_bar_left_menu"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text="Curren₡"
+                android:id="@+id/title"
+                    android:textSize="24sp"
+                    android:textColor="@color/currencm"
+                    android:layout_gravity="center"/>
+
+            <Button
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="@drawable/titlebar_menu_selector"
+                    android:id="@+id/title_bar_right_menu"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"/>
+
+        </FrameLayout>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#ebebeb"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/main_fragment">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_below="@+id/idPieChart2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:weightSum="1"
+            android:layout_gravity="left|center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Current Wallet Balance:"
+                android:id="@+id/textView2"
+                android:layout_gravity="left"
+                android:clickable="false"
+                android:textColor="#ffacacac"
+                android:textSize="15sp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:textSize="25sp"
+            android:id="@+id/balances"
+            android:layout_gravity="right|center_vertical" />
+    </FrameLayout>
+
+</LinearLayout>

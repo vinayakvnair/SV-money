@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#303F9F</color>
+    <color name="green_teal">#009688</color>
+    <color name="red">#9e1e13</color>
+    <color name="lime">#dba60a</color>
+    <color name="colorAccent">#00a1ae</color>
+
+
+    <color name="green">#34a853</color>
+    <color name="currencm">#00a1ae</color>
+    <color name="currenc">#6d7072</color>
+<color name="backgg">#ffffff</color>
+    <color name="purple">#673AB7</color>
+    <color name="cyan">#194991</color>
+    <color name="orange">#e95609</color>
+    <color name="grey">#f2f5f5</color>
+    <color name="gre">#bbbbbb</color>
+    <color name="accent_color">@color/blue</color>
+    <color name="colorPrimary">@color/blue</color>
+    <color name="colorPrimaryDark">@color/blue</color>
+    <color name="statusBarColor">#00a1ae</color>
+    <color name="navigationBarColor">#00a1ae</color>
+    <color name="drawerArrowColor">#00a1ae</color>
+    <color name="apptheme_color">#393938</color>
+    <color name="blightgrey">#1b1b1a</color>
+    <color name="bpressed">#212120</color>
+    <color name="bfocused">#333332</color>
+
+</resources>

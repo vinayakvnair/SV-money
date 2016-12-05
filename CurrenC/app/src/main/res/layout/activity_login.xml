@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tkmdashboard.admins.currenc.loginActivity">
+    <ImageView
+
+
+        android:id="@+id/imageView2"
+        android:src="@drawable/loginbck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:scaleType="fitXY"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/apptitles"
+        android:id="@+id/logintitle"
+        android:textSize="45sp"
+        android:textColor="@color/currencm"
+
+        android:singleLine="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/signuplabel"
+        android:layout_marginTop="68dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₡"
+        android:textSize="45sp"
+        android:textColor="@color/currenc"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/logintitle"
+        android:layout_toEndOf="@+id/logintitle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/loginhelp"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+
+
+        android:layout_below="@+id/logintitle"
+        android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:id="@+id/edittextlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+        android:paddingLeft="@dimen/loginhoriz"
+        android:paddingRight="@dimen/loginhoriz"
+        android:paddingTop="@dimen/loginverti"
+        android:paddingBottom="@dimen/loginverti"
+        android:weightSum="1"
+        android:layout_below="@+id/loginhelp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp">
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:id="@+id/usernamefield"
+            android:inputType="textEmailAddress"
+            android:hint="@string/username_hint"
+            android:ems="10"
+            android:textColorHint="@color/currenc"
+            android:drawableLeft="@drawable/email"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+
+            android:drawablePadding="20dp"
+            android:textSize="17sp"
+
+
+            android:textColor="@color/currenc"
+            android:autoText="false" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordfield"
+            android:hint="@string/password"
+
+            android:textColorHint="@color/currenc"
+            android:textSize="17sp"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="20dp"
+
+            android:textColor="@color/currenc" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:text="@string/loginbutton"
+            android:id="@+id/ffssubmit"
+
+            android:textColor="@android:color/white"
+
+            android:background="@drawable/button_custom"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/edittextlayout" />
+        <com.facebook.login.widget.LoginButton
+
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/login_button"
+            android:layout_weight="0.50" />
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signuplabel"
+        android:id="@+id/signuplabel"
+        android:textColor="@color/currenc"
+        android:textSize="16sp"
+
+        android:textAlignment="center"
+        android:layout_below="@+id/edittextlayout"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
+
